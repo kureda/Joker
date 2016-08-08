@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">jokeAndroidLib</string>
+    <string name="JOKE">com.kureda.udacity.joker.JOKE</string>
+</resources>
