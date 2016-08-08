@@ -34,17 +34,17 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Added for AdMob
+
     compile project(':jokeandroidlib')
     compile project(path: ':backend', configuration: 'android-endpoints')
-
     compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.google.android.gms:play-services-ads:8.4.0'
 
+    // Added for AdMob
+    freeCompile 'com.google.android.gms:play-services-ads:8.4.0'
+
+    // Added for testing
     androidTestCompile 'com.android.support:support-annotations:23.3.0'
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test:runner:0.4'
     androidTestCompile 'com.android.support.test:rules:0.4'
-
 }
